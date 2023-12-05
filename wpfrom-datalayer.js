@@ -114,7 +114,7 @@
             if(!errorRequired) {
                 window.dataLayer = window.dataLayer || [];
                 delete wpFormData['wpforms_nonce'];
-                dataLayer.push({event: 'wpform_submit', fromId: formId, inputs: wpFormData});
+                dataLayer.push({event: 'wpform_submit', formId: formId, inputs: wpFormData});
             }
 
         });
