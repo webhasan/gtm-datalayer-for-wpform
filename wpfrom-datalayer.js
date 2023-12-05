@@ -36,6 +36,7 @@
 
                                     if(requestBody.action === "wpforms_submit") {
                                         window.dataLayer = window.dataLayer || [];
+                                        delete requestBody['wpforms_nonce'];
                                         dataLayer.push({
                                             event: 'wpform_submit',
                                             formId: requestBody['wpforms_id'],
