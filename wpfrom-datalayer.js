@@ -36,11 +36,12 @@
 
                                     if(requestBody.action === "wpforms_submit") {
                                         window.dataLayer = window.dataLayer || [];
-                                        delete requestBody['wpforms_nonce'];
+                                        var wpFormData = Object.assign({}, requestBody);
+                                        delete wpFormData['wpforms_nonce'];
                                         dataLayer.push({
                                             event: 'wpform_submit',
-                                            formId: requestBody['wpforms_id'],
-                                            inputs: requestBody
+                                            formId: wpFormData['wpforms_id'],
+                                            inputs: wpFormData
                                         });
                                     }
                                 }
