@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     // Ajax Form
     var ajaxForm = document.querySelectorAll('form.wpforms-ajax-form');
     if(ajaxForm.length) {
