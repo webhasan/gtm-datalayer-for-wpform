@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     // Ajax Form
     var ajaxForm = document.querySelectorAll('form.wpforms-ajax-form');
     if(ajaxForm.length) {
@@ -117,4 +117,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
         });
     });
-});
+})();
